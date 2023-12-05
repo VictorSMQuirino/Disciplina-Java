@@ -1,0 +1,20 @@
+1. Uma exceção é um evento que interrompe o fluxo de execução do programa devido a um erro ou comportamento inesperado.
+O propósito de usá-las nos programas é poder capturar esses comportamentos inesperados e tratar de forma que o programa
+não "quebre". Dessa forma, o programa seguirá seu fluxo de execução sem ser interrompido.
+
+2. Exceções verificadas são exceções que o compilador obriga que sejam tratadas no código, enquanto que exceções não
+verificadas são execeções que o compilador não obriga o programador a tratar.
+Exemplos de exceções verificadas: IOException, SQLException.
+Exemplos de exceções não verificadas: NullPointerException, ArrayIndexOutOfBoundsException.
+
+3. Para tratar exceções pode utilizar o bloco try-catch para capturar exceções esperadas para determinados comportamentos
+do programa. Outra alternatica é utilizar a cláusula throws na assinatura de um método que pode lançar uma exceção.
+
+4. O bloco try-catch é utilizado para capturar exceções esperadas em determinados trechos do código. No bloco try fica a
+execução normal do código e no bloco catch contém um bloco de código que será executado caso determinada exceeção seja cap-
+turada. A cada bloco try podem ser associados mais de um bloco catch, caso o trecho de código contido no bloco try possa
+lançar mais de uma exceção diferente.
+
+5. É apropriado criar exceções quando se deseja capturar algum erro no código que não podem ser muito bem representados
+pelas exceções padrões do Java. Um bom exemplo de quando pode criar uma exceção em um programa Java é em um cadastro de
+clientes em um sistema e é passado um cpf já cadastrado no sistema.
